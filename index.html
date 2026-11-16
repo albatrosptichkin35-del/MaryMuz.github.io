@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мария | Создание песен через ИИ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(145deg, #0a0f1e, #1a1f2e);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+        .card {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(18, 24, 40, 0.85);
+            backdrop-filter: blur(4px);
+            border-radius: 40px;
+            padding: 40px 32px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04);
+        }
+        .name {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #f7b731, #f7971e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .sub {
+            color: #b0b8c8;
+            font-size: 1.1rem;
+            margin-bottom: 32px;
+            border-left: 3px solid #f7b731;
+            padding-left: 16px;
+        }
+        .offer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            background: rgba(0,0,0,0.25);
+            border-radius: 28px;
+            padding: 28px 24px;
+            margin-bottom: 28px;
+        }
+        .offer-item {
+            flex: 1;
+            min-width: 200px;
+        }
+        .offer-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: #8a94a6;
+            margin-bottom: 4px;
+        }
+        .offer-item .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f0f3f8;
+        }
+        .offer-item .value small {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #b9c0d0;
+        }
+        .price {
+            font-size: 2.6rem;
+            font-weight: 800;
+            background: #f7b731;
+            color: #0a0f1e;
+            padding: 8px 24px;
+            border-radius: 60px;
+            display: inline-block;
+            margin-top: 12px;
+        }
+        .btn {
+            display: inline-block;
+            background: transparent;
+            border: 2px solid #f7b731;
+            color: #f7b731;
+            padding: 16px 48px;
+            border-radius: 60px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background: #f7b731;
+            color: #0a0f1e;
+        }
+        .note {
+            margin-top: 24px;
+            font-size: 0.9rem;
+            color: #7b8499;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="name">Мария</div>
+        <div class="sub">✨ Создатель песен на нейросетях</div>
+
+        <div class="offer">
+            <div class="offer-item">
+                <span>Скорость</span>
+                <div class="value">5 <small>минут</small></div>
+            </div>
+            <div class="offer-item">
+                <span>Формат</span>
+                <div class="value">MP3 / WAV</div>
+            </div>
+            <div class="offer-item">
+                <span>Стили</span>
+                <div class="value">∞</div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <div class="price">499 ₽</div>
+            <br>
+            <a href="#" class="btn">Заказать песню</a>
+        </div>
+
+        <div class="note">
+            Вы загадываете жанр, настроение и тему — я собираю трек через ИИ-конструктор за 5 минут.
+        </div>
+    </div>
+</body>
+</html>
